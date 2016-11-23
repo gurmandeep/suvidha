@@ -1,0 +1,18 @@
+.nav{
+	background-color: grey;
+	border: 0.5px solid black;
+	box-shadow: 1px
+	border-radius: 2px;
+	text-align: center;
+	padding: 15px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none
+}
+
+a{
+	text-decoration: none;
+}
+.ui-panel-inner{
+	padding: 0;
+}
