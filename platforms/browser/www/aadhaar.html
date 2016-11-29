@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  .ui-navbar [class^="ui-block"] {
+    width: 100% !important;
+}
+</style>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="panel" id="myPanel">
+     <div class="nav"><img src="img/mainLogo.png" alt="" height="100px" width="100px"></div>
+     <a href="index.html"><div class="nav">Home</div></a>
+      <a href="aadhaar.html"><div class="nav">Aadhaar</div></a>
+      <a href="Passport.html"><div class="nav">Passport Apply</div></a>
+      <a href="suwidhaservices.html"><div class="nav">Suwidha Services</div></a>
+  </div>
+  
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ">Menu</a>
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form action="">
+      <label for="en">Enrolment Number</label>
+      <input type="text" id="en" placeholder="Enrolment Number">
+      <br>
+       <label for="fn">Full Name</label>
+      <input type="text" id="fn" placeholder="Full Name">
+      <br>
+       <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" placeholder="Pincode">
+      <br>
+       <label for="captcha">Enter Above Image Text</label>
+      <input type="text" id="captcha" placeholder="Image Text">
+      <br>
+       <label for="mn">Mobile Number</label>
+      <input type="text" id="mn" placeholder="Mobile Number">
+      <br>
+      <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" type="button" >Submit</button>
+
+    </form>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>
+
+  <!-- dialog Box -->
+      <div data-role="page" data-dialog="true" id="pagetwo">
+        <div data-role="header">
+          <h1>I'm A Dialog Box!</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+          <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
+          <a href="#pageone">Go to Page One</a>
+        </div>
+
+        <div data-role="footer">
+          <h1>Footer Text In Dialog</h1>
+        </div>
+</div> 
+  <!-- dialog Box -->
+</body>
+</html>

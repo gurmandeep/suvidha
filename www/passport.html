@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  .ui-navbar [class^="ui-block"] {
+    width: 100% !important;
+}
+</style>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="../platforms/browser/www/cordova.js"></script>
+
+  <!-- <script src="js/index.js"></script> -->
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="panel" id="myPanel">
+     <div class="nav"><img src="img/mainLogo.png" alt="" height="100px" width="100px"></div>
+      <a href="index.html"><div class="nav">Home</div></a>
+      <a href="aadhaar.html"><div class="nav">Aadhaar</div></a>
+      <a href="passport.html"><div class="nav">Passport Apply</div></a>
+      <a href="suwidhaservices.html"><div class="nav">Suwidha Services</div></a>
+      <a href="" class="n">wow</a>
+  </div>
+  
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ">Menu</a>
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form action="">
+      <label>Register to apply at</label>
+      <label for="radio1">CPV Delhi</label>
+      <input type="radio" name="option" value="cpv_delhi" id="radio1" class="apply_at"><br>
+      <label for="radio2">Passport Office</label>
+      <input type="radio" name="option" value="passport_office" id="radio2" class="apply_at"><br>
+      <label for="passport_office" class="pass">Passport Office</label>
+      <select id="passport_office" class="pass">
+        <option>----Select----</option>
+        <option value="amritsar">Amritsar</option>
+        <option value="ahmedabad">Ahmedabad</option>
+        <option value="chennai">Chennai</option>
+        <option value="chd">Chandigarh</option>
+        <option value="delhi">Delhi</option>
+        <option value="goa">Goa</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="jaipur">Jaipur</option>
+        <option value="punjab">Punjab</option>
+        
+      </select>
+      <br>
+       <label for="fn">Given Name</label>
+      <input type="text" id="fn" placeholder="Full Name">
+      <br>
+       <label for="surname">Surname</label>
+      <input type="text" id="surname" placeholder="Surname">
+      <br>
+       <label for="date">Date of birth</label>
+      <input type="date" id="date" placeholder="Image Text">
+      <br>
+       <label for="email">E-mail id</label>
+      <input type="email" id="email" placeholder="E-mail Id">
+      <br>
+      <label>Do you want your login id to be same as E-mail id?</label>
+      <label for="radio3">Yes</label>
+      <input type="radio" name="option1" value="cpv_delhi" id="radio3"><br>
+      <label for="radio4">No</label>
+      <input type="radio" name="option1" value="passport_office" id="radio4"><br>
+      
+      <label for="emaillogin">Login Id</label>
+      <input type="email" id="emaillogin" placeholder="Login Id">
+      <br>
+
+      <label for="pass">Password</label>
+      <input type="password" id="pass" placeholder="password">
+      <br>
+      <label for="cpass">Confirm Password</label>
+      <input type="password" id="cpass" placeholder="Confirm password">
+      <br>
+      
+       <label for="hint_ques">Hint Question</label>
+        <select id="hint_ques">
+        <option>----Select----</option>
+        <option value="birth_city">Birth City</option>
+        <option value="fav_colour">Favorite Colour</option>
+        <option value="fav_cricketer">Favorite Cricketer</option>
+        <option value="fav_food">Favorite Food</option>
+        <option value="first_school">First School</option>
+        <option value="first_car">Make of first car owned</option>
+        <option value="maiden_name">Mother's Maiden Name</option>
+        
+        
+      </select>
+      <br>
+      
+      <label for="hint_ans">Hint Answer</label>
+      <input type="text" id="hint_ans" placeholder="hint answers">
+      <br>
+
+          <input type="text" id="mainCaptcha">
+      <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" type="button" >Submit</button>
+
+    </form>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>
+
+  <!-- dialog Box -->
+      <div data-role="page" data-dialog="true" id="pagetwo">
+        <div data-role="header">
+          <h1>I'm A Dialog Box!</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+          <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
+          <a href="#pageone">Go to Page One</a>
+        </div>
+
+        <div data-role="footer">
+          <h1>Footer Text In Dialog</h1>
+        </div>
+</div> 
+  <!-- dialog Box -->
+</body>
+</html>
