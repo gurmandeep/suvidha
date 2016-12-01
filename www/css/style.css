@@ -17,3 +17,7 @@ a{
 	padding: 0;
 	background-color: grey;
 }
+
+#mainCaptcha{
+	text-align: center;
+}
