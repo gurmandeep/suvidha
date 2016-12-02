@@ -12,11 +12,12 @@
   <!-- <link rel="stylesheet" href="css/index.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="../platforms/browser/www/cordova.js"></script>
+
+  <!-- <script src="js/index.js"></script> -->
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/captcha.js"></script>
-  
 </head>
 <body onload="Captcha()">
 
@@ -26,34 +27,24 @@
       <a href="index.html" rel="external"><div class="nav">Home</div></a>
       <a href="aadhaar.html" rel="external"><div class="nav">Aadhaar</div></a>
       <a href="passport.html" rel="external"><div class="nav">Passport Apply</div></a>
-       <a href="passportLogin.html" rel="external"><div class="nav">Passport Login</div></a>
-  </div>
+      <a href="passportLogin.html" rel="external"><div class="nav">Passport Login</div></a>
+      <!-- <a href="suwidhaservices.html" rel="external"><div class="nav">Suwidha Services</div></a> -->
+    </div>
   
   <div data-role="header">
   <a href="#myPanel" class="ui-btn ">Menu</a>
-    <h1>Check Aadhaar Status</h1>
+    <h1>Apply For Passport</h1>
   </div>
 
   <div data-role="main" class="ui-content">
     <form action="">
-      <label for="en">Enrolment Number</label>
-      <input type="text" id="en" placeholder="Enrolment Number">
+      <h2>Login</h2>
       <br>
-       <label for="fn">Full Name</label>
-      <input type="text" id="fn" placeholder="Full Name">
-      <br>
-       <label for="pincode">Pincode</label>
-      <input type="text" id="pincode" placeholder="Pincode">
-      <br>
-      <p id="mainCaptcha"></p>
-       <label for="captcha">Enter Above Text</label>
-      <input type="text" id="captcha" placeholder="Image Text">
-      <br>
-       <label for="mn">Mobile Number</label>
-      <input type="text" id="mn" placeholder="Mobile Number">
-      <br>
-      <a class="ui-btn ui-btn-inline ui-shadow ui-corner-all" type="button" href="#pagetwo">Submit</a>
-
+        <label for="">Login ID</label>
+        <input type="text" placeholder="Enter Login Id"> 
+        <a href="passport.html" rel="external">Register (New User)</a> &nbsp;
+        <a class="ui-btn ui-btn-inline ui-shadow ui-corner-all"  href="#pagetwo">Submit</a>
+        
     </form>
   </div>
 
@@ -69,7 +60,7 @@
         </div>
 
         <div data-role="main" class="ui-content">
-          <p>Coming Soon !!</p>
+          <p>Login Successful.</p>
          
         </div>
 
